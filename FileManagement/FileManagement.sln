@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManagementService", "FileManagementService\FileManagementService.csproj", "{449EBE71-E129-4DA7-92BC-8904CB8D4684}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManagementTests", "FileManagementTests\FileManagementTests.csproj", "{DACF146E-018E-4565-BB0E-D85CB1798FA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{449EBE71-E129-4DA7-92BC-8904CB8D4684}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{449EBE71-E129-4DA7-92BC-8904CB8D4684}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{449EBE71-E129-4DA7-92BC-8904CB8D4684}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{449EBE71-E129-4DA7-92BC-8904CB8D4684}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DACF146E-018E-4565-BB0E-D85CB1798FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DACF146E-018E-4565-BB0E-D85CB1798FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DACF146E-018E-4565-BB0E-D85CB1798FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DACF146E-018E-4565-BB0E-D85CB1798FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2523E710-32B0-4057-AD77-CD4CA1F2335C}
+	EndGlobalSection
+EndGlobal
