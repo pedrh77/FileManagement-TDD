@@ -17,8 +17,7 @@
                     if (FindFileByName(item, files) != null) result[cont] = "null";
                     else
                     {
-                        var add_file = new Files(_query[cont][1], _query[cont][2]);
-                        files.Add(add_file);
+                       AddNewFile(item[1], item[2], files);
                         result[cont] = "true";
 
                     }
@@ -39,6 +38,16 @@
                         result[cont] = "deleted";
                     }
                 }
+                else if (item[0] == "COPY_FILE")
+                {
+                    var file = FindFileByName(item, files);
+                    if (file == null) result[cont] = "null";
+                    else
+                    {
+                       var copy = AddNewFile(item[2], file.Content, files);
+                        result[cont] = $"{copy.Name}";
+                    }
+                }
                 cont++;
             }
             return result;
@@ -47,6 +56,13 @@
         private static Files? FindFileByName(string[] name, List<Files> files)
         {
             return files.Find((file) => file.Name == name[1].ToString());
+        }
+
+        private static Files? AddNewFile(string name, string content,  List<Files> files)
+        {
+            var add_file = new Files(name, content);
+            files.Add(add_file);
+            return add_file;
         }
     }
 }
